@@ -13,3 +13,5 @@ Não há segredo nem GitHub App: o kit mínimo roda só com o `GITHUB_TOKEN`.
 ## Ver funcionando
 
 Abra uma PR de uma branch `feature/...` para `dev`: os dois checks aparecem na PR. A PR de exemplo está nas PRs fechadas ou abertas deste repo.
+
+Exemplo de PR: esta linha só existe para abrir a PR policiada.
