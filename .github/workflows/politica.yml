@@ -1,0 +1,18 @@
+name: politica
+on:
+  pull_request:
+    types: [opened, edited, reopened, synchronize, ready_for_review]
+  pull_request_review:
+    types: [submitted, edited, dismissed]
+permissions:
+  contents: read
+  pull-requests: write
+jobs:
+  pr-police:
+    uses: viralabs-dev/brabo-ci/.github/workflows/pr-police.yml@738350eb049e9b117818816c29d99c01f7c5667a  # v1.4.0-dev.8
+    with:
+      ci_ref: 738350eb049e9b117818816c29d99c01f7c5667a  # v1.4.0-dev.8
+  escada:
+    uses: viralabs-dev/brabo-ci/.github/workflows/approval-ladder.yml@738350eb049e9b117818816c29d99c01f7c5667a  # v1.4.0-dev.8
+    with:
+      ci_ref: 738350eb049e9b117818816c29d99c01f7c5667a  # v1.4.0-dev.8
